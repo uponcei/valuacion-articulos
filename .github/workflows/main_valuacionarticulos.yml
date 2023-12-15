@@ -12,6 +12,10 @@ on:
 jobs:
   build:
     runs-on: windows-latest
+    env:
+      DB_VALUACION_ARTICULOS_NAME: ${{ secrets.DB_VALUACION_ARTICULOS_NAME }}
+      DB_VALUACION_ARTICULOS_URI: ${{ secrets.DB_VALUACION_ARTICULOS_URI }}
+      PORCENTAJE_VALUACION_ARTICULOS: ${{ secrets.PORCENTAJE_VALUACION_ARTICULOS }}
 
     steps:
       - uses: actions/checkout@v4
