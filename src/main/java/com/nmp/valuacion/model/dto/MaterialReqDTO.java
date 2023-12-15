@@ -3,6 +3,7 @@ package com.nmp.valuacion.model.dto;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotNull;
 
+import java.io.Serial;
 import java.io.Serializable;
 import java.math.BigDecimal;
 
@@ -15,7 +16,7 @@ import java.math.BigDecimal;
  * @version 0.1
  */
 public class MaterialReqDTO implements Serializable {
-
+    @Serial
     private static final long serialVersionUID = -189592874861035548L;
     @Valid
     @NotNull(message = "El código del artículo es requerido")

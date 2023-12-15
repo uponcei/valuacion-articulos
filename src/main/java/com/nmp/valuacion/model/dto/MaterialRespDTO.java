@@ -1,5 +1,6 @@
 package com.nmp.valuacion.model.dto;
 
+import java.io.Serial;
 import java.io.Serializable;
 import java.math.BigDecimal;
 
@@ -12,6 +13,7 @@ import java.math.BigDecimal;
  */
 public class MaterialRespDTO implements Serializable {
 
+    @Serial
     private static final long serialVersionUID = 5921668724562776284L;
 
     private String codigo;

@@ -2,6 +2,8 @@ package com.nmp.valuacion.exception;
 
 import org.springframework.http.HttpStatus;
 
+import java.io.Serial;
+
 /**
  * @name EmpenioException
  * @description Clase de excepcion lanzada cuando se genera un error relacionados con el calculo del empenio
@@ -11,6 +13,7 @@ import org.springframework.http.HttpStatus;
  */
 public class EmpenioException extends BaseException {
 
+    @Serial
     private static final long serialVersionUID = -4233312398815067482L;
 
     public static final EmpenioException CODIGO_NO_ENCONTRADO =

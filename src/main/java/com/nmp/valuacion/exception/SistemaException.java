@@ -2,6 +2,8 @@ package com.nmp.valuacion.exception;
 
 import org.springframework.http.HttpStatus;
 
+import java.io.Serial;
+
 /**
  * @name SistemaException
  * @description Clase de excepcion lanzada cuando se genera un error de sistema
@@ -11,6 +13,7 @@ import org.springframework.http.HttpStatus;
  */
 public class SistemaException extends BaseException {
 
+    @Serial
     private static final long serialVersionUID = 7560984206887757294L;
 
     public static final SistemaException INTERNAL_SERVER_ERROR =

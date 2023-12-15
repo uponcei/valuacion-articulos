@@ -2,6 +2,8 @@ package com.nmp.valuacion.exception;
 
 import org.springframework.http.HttpStatus;
 
+import java.io.Serial;
+
 
 /**
  * @name BaseException
@@ -12,6 +14,7 @@ import org.springframework.http.HttpStatus;
  */
 public class BaseException extends Exception {
 
+    @Serial
     private static final long serialVersionUID = -2251635065575807144L;
 
     public static final String LABEL_ERROR_ID = "Error";
