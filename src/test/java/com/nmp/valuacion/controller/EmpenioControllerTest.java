@@ -14,7 +14,7 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 
-import static org.mockito.ArgumentMatchers.any;;
+import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
@@ -29,7 +29,7 @@ import java.math.BigDecimal;
  */
 @SpringBootTest(classes = ValuacionApplication.class)
 @AutoConfigureMockMvc(addFilters = false)
-public class EmpenioControllerTest {
+class EmpenioControllerTest {
 
     private final String ENDPOINT_BASE = "/valuacion";
 

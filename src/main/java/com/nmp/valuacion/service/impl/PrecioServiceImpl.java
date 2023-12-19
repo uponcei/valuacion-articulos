@@ -24,12 +24,16 @@ import java.math.RoundingMode;
 @Service("precioService")
 public class PrecioServiceImpl implements PrecioService {
 
-    @Autowired
-    private PrecioRepository precioRepository;
+
+    private final PrecioRepository precioRepository;
 
     @Value("${valuacion.porcentaje}")
     private BigDecimal porcentaje;
 
+    @Autowired
+    public PrecioServiceImpl(PrecioRepository precioRepository) {
+        this.precioRepository = precioRepository;
+    }
 
     /**
      * {@inheritDoc}

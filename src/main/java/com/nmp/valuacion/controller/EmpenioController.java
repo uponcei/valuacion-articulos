@@ -32,8 +32,12 @@ import java.math.BigDecimal;
 @Tag(name = "Controlador de Empeños", description = "Servicio que nos permite realizar las operaciones relacionadas con los empeños")
 public class EmpenioController {
 
+    private final PrecioService precioService;
+
     @Autowired
-    private PrecioService precioService;
+    public EmpenioController(PrecioService precioService) {
+        this.precioService = precioService;
+    }
 
     @ResponseBody
     @GetMapping(value = "/calcularEmpenio", produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)

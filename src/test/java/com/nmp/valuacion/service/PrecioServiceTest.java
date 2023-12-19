@@ -18,7 +18,7 @@ import static org.mockito.ArgumentMatchers.*;
 import static org.mockito.Mockito.*;
 
 @SpringBootTest(classes = ValuacionApplication.class)
-public class PrecioServiceTest {
+class PrecioServiceTest {
 
     @Autowired
     PrecioService precioService;
